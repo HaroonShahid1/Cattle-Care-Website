@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('../imgs/back.jpg') center/cover no-repeat; 
+    color: #000000;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.login-container:hover {
+    transform: scale(1.05);
+}
+
+.login-container ion-icon {
+    font-size: 5rem;
+    padding-left: 40%;
+}
+
+.heading{
+    justify-content: center;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #45a049;
+}
+
+.password-container {
+    position: relative;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.show-password:hover {
+    color: #4caf50;
+}
+
+.login-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #45a049;
+}
