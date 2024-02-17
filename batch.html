@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="batch.css">
+
+    <title>Cattle Care</title>
+</head>
+
+<body>
+
+        <!-- SIDEBAR -->
+        <section id="sidebar">
+            <a href="#" class="brand">
+                <i class='bx bxs-check-shield'></i>
+                <span class="text">Cattle Care</span>
+            </a>
+            <img src="file:///E:/Cattle%20Care/img/Logo.png" class="responsive-logo">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion" id="sidenavAccordion" style="padding-top: 20px;">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">              
+                        </div>
+                        <div class="nav">
+                            <a class="nav-link active-link" id="dashboard-link" href="batch.html">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-bath"></i> &nbsp; Batches</div>
+                            </a>                                           
+                        </div>
+                        <div class="nav">
+                            <a class="nav-link" id="dashboard-link" href="animals.html">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-hippo"></i>  &nbsp; Animals</div>
+                            </a>                 
+                        </div>
+                        <div class="nav">
+                            <a class="nav-link" id="dashboard-link" href="feeding.html">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-comment-dollar"></i> &nbsp; Feeding</div>           
+                            </a>                 
+                        </div>
+                        <div class="nav">
+                            <a class="nav-link" id="dashboard-link" href="" style="color: rgba(196, 55, 55, 0.953);">
+                                <div class="sb-nav-link-icon"><i class='bx bxs-log-out-circle'></i> &nbsp; Log Out</div>           
+                            </a>                 
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+    <section id="content">
+
+        <nav>
+			<p class="nav_p"> > &nbsp; Batches</p>
+		</nav>
+
+        <main>
+            <p class="batch_history">Batch History</p>
+            <ul class="box-info">
+				<li>
+                    <div class="main-box">
+                        <img src="file:///E:/Cattle%20Care/img/card1.jpg">
+                        <div class="text">
+                            <p class="card_p">Total No. of Batches</p>
+                            <p class="info-value">1500</p>
+                        </div>
+                    </div>
+				</li>
+				<li>
+                    <div class="main-box">
+                        <img src="file:///E:/Cattle%20Care/img/card2.png">
+                        <div class="text">
+                            <p class="card_p">Total No. of Animals</p>
+                            <p class="info-value">2200</p>
+                        </div>
+                    </div>
+				</li>
+				<li>
+                    <div class="main-box">
+                        <img src="file:///E:/Cattle%20Care/img/card1.jpg">
+                        <div class="text">
+                            <p class="card_p">Total Expense</p>
+                            <p class="info-value">421500</p>
+                        </div>
+                    </div>
+				</li>
+	
+			</ul>
+
+            <!-- Add New Button -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="batch_history" style="margin-top: 5px;">Batches Details</h1>
+                </div>
+                <div class="col-md-6 text-end">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addAccountModal" data-bs-whatever="@mdo">Add New</button>
+                </div>
+            </div>
+            
+
+            <!-- Table Head -->
+            <div class="table-head">
+                <table class="table table-bordered mt-3">
+                    <colgroup>
+                        <col style="width: 20%;" />
+                        <col style="width: 20%;" />
+                        <col style="width: 20%;" />
+                        <col style="width: 20%;" />
+                        <col style="width: 20%;" />
+                    </colgroup>
+                    <thead class="head_table">
+                        <tr>
+                            <th>Batch Number</th>
+                            <th>Batch Name</th>
+                            <th>Number of Animals</th>
+                            <th>Total Expense</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <!-- Table Body -->
+            <div class="table-body">
+                <table class="table table-bordered mt-3">
+                    <colgroup>
+                        <col style="width: 20%;" />
+                        <col style="width: 20%;" />
+                        <col style="width: 20%;" />
+                        <col style="width: 20%;" />
+                        <col style="width: 20%;" />
+                    </colgroup>
+                    <tbody>
+                        <tr class="sn">
+                            <td class="highlight">SN-1</td>
+                            <td>Moo Crew</td>
+                            <td>40</td>
+                            <td>4000</td>
+                            <td>20-12-2023</td>
+                        </tr>
+                        <tr class="sn">
+                            <td class="highlight">SN-1</td>
+                            <td>Moo Crew</td>
+                            <td>40</td>
+                            <td>4000</td>
+                            <td>20-12-2023</td>
+                        </tr>
+                        <tr class="sn">
+                            <td class="highlight">SN-1</td>
+                            <td>Moo Crew</td>
+                            <td>40</td>
+                            <td>4000</td>
+                            <td>20-12-2023</td>
+                        </tr>
+                        <tr class="sn">
+                            <td class="highlight">SN-1</td>
+                            <td>Moo Crew</td>
+                            <td>40</td>
+                            <td>4000</td>
+                            <td>20-12-2023</td>
+                        </tr>
+                        <tr class="sn">
+                            <td class="highlight">SN-1</td>
+                            <td>Moo Crew</td>
+                            <td>40</td>
+                            <td>4000</td>
+                            <td>20-12-2023</td>
+                        </tr>
+                        <tr class="sn">
+                            <td class="highlight">SN-1</td>
+                            <td>Moo Crew</td>
+                            <td>40</td>
+                            <td>4000</td>
+                            <td>20-12-2023</td>
+                        </tr>
+                        <tr class="sn">
+                            <td class="highlight">SN-1</td>
+                            <td>Moo Crew</td>
+                            <td>40</td>
+                            <td>4000</td>
+                            <td>20-12-2023</td>
+                        </tr>
+                        <tr class="sn">
+                            <td class="highlight">SN-1</td>
+                            <td>Moo Crew</td>
+                            <td>40</td>
+                            <td>4000</td>
+                            <td>20-12-2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal fade" id="addAccountModal" tabindex="-1" role="dialog" aria-labelledby="addAccountModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addAccountModalLabel">Add New Batch</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="newParentAccount" class="col-form-label">Batch Number:</label>
+                                    <select class="form-control" id="newParentAccount" required>
+                                        <option value="option1">SN 1</option>
+                                        <option value="option2">SN 2</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="newTitle" class="col-form-label">Batch Name:</label>
+                                    <input type="text" class="form-control" id="newTitle" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="numberOfAnimals" class="col-form-label">Number of Animals:</label>
+                                    <input type="text" class="form-control" id="numberOfAnimals" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="creationDate" class="col-form-label">Creation Date:</label>
+                                    <input type="date" class="form-control" id="creationDate" readonly>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="totalExpense" class="col-form-label">Total Expense:</label>
+                                    <input type="text" class="form-control" id="totalExpense" readonly>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Add Batch</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+    </section>
+
+    <!-- Bootstrap JS and other scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+    <script src="batch.js"></script>
+
+
+</body>
+
+</html>
