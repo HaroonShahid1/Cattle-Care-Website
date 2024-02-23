@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="feeding.css">
+
+    <title>Cattle Care</title>
+</head>
+
+<body>
+
+    <!-- Load Sidebar using JavaScript -->
+    <div id="sidebar-container"></div>
+
+    <section section id="content1">
+        <nav>
+            <p class="nav_p"> > &nbsp; Feeding</p>
+        </nav>
+        <main class="main1">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 style="margin-top: 5px;">Feeding Details</h1>
+                </div>
+                <div class="col-md-6 text-end">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addAccountModal" data-bs-whatever="@mdo">Add New Feed</button>
+                </div>
+            </div>
+            <div id="add-new-feed"></div>
+        </main>
+    </section>
+
+    <section id="content">
+        <main class="main2">
+            <div class="feed-container">
+                <div id="feed-table" class="feed-1"></div>
+                <div class="feed-2-container">
+                    <div id="feed-table2" class="feed-2"></div>
+                    <div id="feed-table3" class="feed-2"></div>
+                    <div id="feed-table4" class="feed-2"></div>
+                    <div id="feed-table5" class="feed-2"></div>
+                    <div id="feed-table6" class="feed-2"></div>
+                    <div id="feed-table7" class="feed-2"></div>
+                    <div id="feed-table8" class="feed-2"></div>
+                    <div id="feed-table9" class="total"></div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+
+    <!-- Bootstrap JS and other scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+    <script src="feeding.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            generateSidebar();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            generateNewFeed();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            generateFeedTable();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            generateFeedTable2();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            generateFeedTable3();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            generateFeedTable4();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            generateFeedTable5();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            generateFeedTable6();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            generateFeedTable7();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            generateFeedTable8();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            generateFeedTable9();
+        });
+
+    </script>
+    
+
+</body>
+
+</html>
